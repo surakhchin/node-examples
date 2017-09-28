@@ -1,0 +1,27 @@
+{
+  "name": "node-examples",
+  "version": "1.0.0",
+  "description": "",
+  "main": "simpleserver",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/surakhchin/node-examples.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/surakhchin/node-examples/issues"
+  },
+  "homepage": "https://github.com/surakhchin/node-examples#readme",
+  "dependencies": {
+    "body-parser": "^1.18.1",
+    "express": "^4.15.4",
+    "mongodb": "^2.2.31",
+    "mongoose": "^4.11.12",
+    "node-restful": "^0.2.6"
+  }
+}

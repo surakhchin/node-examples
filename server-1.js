@@ -10,5 +10,5 @@ var server = http.createServer(function(req, res){
   res.end('<html><body><h1>Hello World</h1></body></html>');
   })
 server.listen(port, hostname, function(){
-  console.log(`Server running at http://${hostname}:${port}/`);
+  console.log('connected to '+hostname+ ' on port '+ port);
 });
