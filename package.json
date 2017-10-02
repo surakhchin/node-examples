@@ -18,10 +18,12 @@
   },
   "homepage": "https://github.com/surakhchin/node-examples#readme",
   "dependencies": {
+    "assert": "^1.4.1",
     "body-parser": "^1.18.1",
     "express": "^4.15.4",
     "mongodb": "^2.2.31",
-    "mongoose": "^4.11.12",
+    "mongoose": "^4.11.13",
+    "mongoose-currency": "^0.2.0",
     "node-restful": "^0.2.6"
   }
 }

@@ -1,4 +1,5 @@
 var express = require('express');
+var morgan = require('morgan');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 
@@ -59,47 +60,6 @@ dishRouter.route('/:dishId')
         res.json(resp);
     });
 });
-
-//old comment code
-// dishRouter.route('/:dishId/comments')
-// .get(function (req, res, next) {
-//     Dishes.findById(req.params.dishId, function (err, dish) {
-//         if (err) throw err;
-//         res.json(dish.comments);
-//     });
-// })
-//
-// .post(function (req, res, next) {
-//     Dishes.findById(req.params.dishId, function (err, dish) {
-//         if (err) throw err;
-//         dish.comments.push(req.body);
-//         dish.save(function (err, dish) {
-//             if (err) throw err;
-//             console.log('Updated Comments!');
-//             res.json(dish);
-//         });
-//     });
-// })
-//
-// .delete(function (req, res, next) {
-//     Dishes.findById(req.params.dishId, function (err, dish) {
-//         if (err) throw err;
-//         for (var i = (dish.comments.length - 1); i >= 0; i--) {
-//             dish.comments.id(dish.comments[i]._id).remove();
-//         }
-//         dish.save(function (err, result) {
-//             if (err) throw err;
-//             res.writeHead(200, {
-//                 'Content-Type': 'text/plain'
-//             });
-//             res.end('Deleted all comments!');
-//         });
-//     });
-// });
-
-
-// New Comment Code
-
 
 dishRouter.route('/:dishId/comments')
 .get(function (req, res, next) {
